@@ -89,8 +89,11 @@ Run a semantic query for `"how do I print documents on campus"` restricted to:
 
 **Reflection questions:**
 - How many results are returned? Why might it be fewer than `n_results=5`?
+    - There were 2 results returned because only two documents match both conditions. `n_results=5` is only an upper bound.
 - Are the distance values close to 0 or far from 0? What does that tell you?
+    - If the distances are close to 0 then the returned documents are sementically very close to the query.
 - Remove the `where` filter and run again — how does the result set change?
+    - The results expanded to the top 5 matches from the whole collection.
 
 ---
 
